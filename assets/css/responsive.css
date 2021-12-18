@@ -1,0 +1,57 @@
+/* ----------- Extra Small Devices Screens ----------- */
+@media only screen and (max-width: 600px) {
+    body {
+        display: flow-root;
+    }
+    .center-card {
+        max-width: 480px;
+        padding: 0 20px;
+    }
+}
+
+/* ----------- small devies Screens ----------- */
+@media only screen and (min-width: 600px) {
+    body {
+        display: flow-root;
+    }
+    .center-card {
+        max-width: 480px;
+        padding: 0 20px;
+
+    }
+}
+
+/* ----------- Medium Devices or Lanscape tablet Screens ----------- */
+@media only screen and (min-width: 768px) {
+    .center-card {
+        padding: 0 20px;
+        max-width: 480px;
+        margin: 0px auto;
+
+    }
+}
+
+/* ----------- Laptops Desktops Screens ----------- */
+@media only screen and (min-width: 992px) {
+    .center-card {
+        max-width: 480px;
+        padding: 0 20px;
+        margin: 0px auto;
+    }
+}
+
+/* ----------- Large Laptops Screens ----------- */
+@media only screen and (min-width: 1200px) {
+    .center-card {
+        max-width: 480px;
+    }
+}
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .center-card {
+        }
+
+    /* ----------- Retina Screens ----------- */
+    @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+        }
+}

@@ -1,0 +1,302 @@
+@import url( 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+$main-font: 'Roboto', sans-serif;
+$primary-blue: #1A4F8B;
+$primary-red: #BF1541;
+//Main stand
+a {
+    text-decoration: none;
+    color: $primary-blue;
+}
+//Background color main primary $primary-blue
+.bg-p-blue {
+    background-color: $primary-blue;
+}
+.bg-p-red {
+    background: $primary-red;
+}
+//Color main primary $primary-blue
+.c-p-blue {
+    color: $primary-blue;
+}
+
+//Button primary
+.btn {
+    cursor: pointer;
+}
+.btn-primary {
+    background-color: $primary-blue;
+    font-family: $main-font;
+    color: #fff;
+}
+.btn-red {
+    background-color: $primary-red;
+}
+.btn-blue {
+    background: #1A4F8B;
+}
+.btn-lg {
+    height: 50px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.408px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+//Button sm
+.btn-sm {
+    border-radius: 5px;
+    padding: 12px 0;
+    width: calc(50% - 5px/2);
+    outline: none;
+    border: none;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+
+}
+.btn-fb {
+    background-color: #385C8E; //Facebook login
+}
+.btn-google {
+    background-color: #F14436; //Google login
+}
+//Margins
+.mt10 {
+    margin-top: 10px;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.mt30 {
+    margin-top: 30px;
+}
+.mb0{
+    margin-bottom: 0px !important;
+}
+.mb10 {
+    margin-bottom: 10px;
+}
+@mixin placeholder-color ($color, $focus) {
+    &::-webkit-input-placeholder {
+        /* WebKit, Blink, Edge */
+        color: $color;
+        &:focus {
+            &::-webkit-input-placeholder {
+                /* WebKit, Blink, Edge */
+                color: $focus;
+            }
+        }
+    }
+    &:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: $color;
+        opacity: 1;
+        &:focus {
+            &:-moz-placeholder {
+                /* Mozilla Firefox 4 to 18 */
+                color: $focus;
+                opacity: 1;
+            }
+        }
+    }
+    &::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: $color;
+        opacity: 1;
+        &:focus {
+            &::-moz-placeholder {
+                /* Mozilla Firefox 19+ */
+                color: $focus;
+                opacity: 1;
+            }
+        }
+    }
+    &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: $color;
+        &:focus {
+            &:-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                color: $focus;
+            }
+        }
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $main-font;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.center-card {
+    min-width: 480px;
+    max-width: 840px;
+    padding: 40px 30px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 100vh;
+    &-body {
+        flex-grow: 1;
+    }
+    &-footer,
+    &-header {
+        flex-shrink: 0;
+    }
+    &-img {
+        display: flex;
+        width: 212px;
+        height: 150px;
+        margin: 0 auto;
+        object-fit: cover;
+        margin-bottom: 30px;
+    }
+    &-title {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        color: #000000;
+    }
+    &-body {
+        margin: 40px 0;
+    }
+    &-footer p {
+        text-align: center;
+        margin-bottom: 25px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #B0B0B0;
+    }
+}
+.shake {
+    animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+    0%,
+    100% {
+        margin-left: 0;
+    }
+    20%,
+    80% {
+        margin-left: -12px;
+    }
+    40%,
+    60% {
+        margin-left: 12px;
+    }
+}
+form .field .input-area {
+    position: relative;
+}
+.input-with-icon {
+    padding-left: 40px;
+}
+form input {
+    height: 50px;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #C3C3C3;
+    border-radius: 5px;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0 15px;
+    color: #767676;
+    @include placeholder-color(#767676, $primary-blue);
+
+}
+.field {
+    width: 100%;
+    margin-bottom: 20px;
+}
+form input:focus {
+    outline: 1px solid $primary-blue;
+    color: $primary-blue;
+    border: 1px solid transparent;
+    @include placeholder-color($primary-blue, $primary-blue);
+}
+.input-with-icon:focus + .input-icon svg path {
+    fill: $primary-blue;
+}
+form .field i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+form .field .input-icon {
+    left: 15px;
+}
+form .field .error-icon {
+    right: 15px;
+    color: #dc3545;
+}
+.input-error-txt {
+    color: #dc3545;
+    margin-top: 5px;
+    text-align: left;
+}
+.error-icon,
+.error-warn {
+    display: none !important;
+}
+.error-warn-d .error-warn,
+.error-warn-d .input-area .error-warn {
+    display: block !important;
+}
+.error-warn-d .input-area .input-with-icon,
+.error-warn-d .input-area input {
+    border-color: #dc3545;
+}
+.input-pass-link {
+    text-align: right;
+}
+.link-forgot-passw {
+    text-decoration: none;
+    margin-top: -10px;
+}
+
+.col-sm {
+    display: inline-flex;
+}
+.col-sm > .input-area {
+    margin-right: 10px;
+}
+.col-sm > .input-area:nth-last-child(2) {
+    margin-right: 0 !important;
+}
+.cvv-text {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    color: #767676;
+}
+// @mixin reset-list {
+//     margin: 0;
+//     padding: 20px;
+//     list-style: none;
+//   }
+
+//   input{
+//       @include reset-list()
+//   }

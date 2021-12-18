@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/style.css"/>
+        <link rel="stylesheet" href="./assets/css/responsive.css"/>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+    </head>
+    <body>
+        <div class="center-card">
+            <!--Card Header-->
+            <div class="center-card-head">
+                <img src="./assets/img/welcomeback.png" class="center-card-img">
+                <h1 class="center-card-title">Welcome Back!</h1>
+            </div>
+            <!--Card body-->
+            <div class="center-card-body">
+                <form action="#">
+                    <!--Email input-->
+                    <div class="field  email">
+                        <div class="input-area ">
+                            <input
+                                type="text"
+                                name=""
+                                id=""
+                                class="input-with-icon"
+                                placeholder="example@email.com">
+                            <i class="input-icon">
+                                <svg
+                                    width="17"
+                                    height="18"
+                                    viewBox="0 0 17 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M8.57142 0.625C5.55056 0.625 3.08673 3.08166 3.08673 6.09375C3.08673 7.96448 4.04165 9.62463 5.48628 10.6104C2.68272 11.8005 0.736145 14.5776 0.736145 17.8125H2.3032C2.3032 14.3243 5.07309 11.5625 8.57142 11.5625C12.0698 11.5625 14.8396 14.3243 14.8396 17.8125H16.4067C16.4067 14.5776 14.4601 11.8005 11.6566 10.6104C13.1012 9.62463 14.0561 7.96448 14.0561 6.09375C14.0561 3.08166 11.5923 0.625 8.57142 0.625ZM8.57143 2.1875C10.7445 2.1875 12.4891 3.927 12.4891 6.09375C12.4891 8.2605 10.7445 10 8.57143 10C6.39836 10 4.65379 8.2605 4.65379 6.09375C4.65379 3.927 6.39836 2.1875 8.57143 2.1875Z"
+                                        fill="#AEAEAE"/>
+                                </svg>
+                            </i>
+                            <i class="error-icon fas fa-exclamation-circle error-warn"></i>
+                        </div>
+                        <div class="input-error-txt error-warn">Email can't be blank</div>
+                    </div>
+                    <!--Password input-->
+                    <div class="field password">
+                        <div class="input-area">
+                            <input type="text" name="" id="" class="input-with-icon" placeholder="password">
+                            <i class="input-icon">
+                                <svg
+                                    width="17"
+                                    height="22"
+                                    viewBox="0 0 17 22"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M8.57142 0.84375C5.55974 0.84375 3.08673 3.30957 3.08673 6.3125V8.65625H0.736145V21.1562H16.4067V8.65625H14.0561V6.3125C14.0561 3.30957 11.5831 0.84375 8.57142 0.84375ZM8.57143 2.40625C10.7292 2.40625 12.4891 4.16101 12.4891 6.3125V8.65625H4.65379V6.3125C4.65379 4.16101 6.41367 2.40625 8.57143 2.40625ZM2.30321 10.2188H14.8396V19.5938H2.30321V10.2188Z"
+                                        fill="#AEAEAE"/>
+                                </svg>
+                            </i>
+                            <i class="error-icon fas fa-exclamation-circle error-warn"></i>
+                        </div>
+                        <div class="input-error-txt error-warn">Password can't be blank</div>
+                        <div class="input-pass-link mt10">
+                            <a href="#" class="link-forgot-passw link-primary">Forgot password?</a>
+                        </div>
+                    </div>
+                    <div class="field  submit">
+                        <!--Submit form-->
+                        <button class="btn btn-primary bg-p-blue btn-lg mt30" onsubmit>LOG IN</button>
+                    </div>
+                </form>
+            </div>
+            <!--Card footer-->
+            <div class="center-card-footer">
+                <p class="center-card-text">Or connect with social</p>
+                <div class="field mt20 ">
+                    <button class="btn btn-sm  btn-primary btn-fb">Facebook</button>
+                    <button class="btn btn-sm btn-primary btn-google">Google</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="./assets/js/validate.js"></script>
+    </body>
+</html>

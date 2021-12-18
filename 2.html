@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/style.css"/>
+        <link rel="stylesheet" href="./assets/css/responsive.css"/>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+    </head>
+    <body>
+   <!--Forgot password-->
+    <div class="center-card" >
+        <!--Card Header-->
+        <div class="center-card-head">
+            <img src="./assets/img/forgotpassword.png" class="center-card-img">
+            <h1 class="center-card-title">Forgot Password</h1>
+        </div>
+        <!--Card body-->
+        <div class="center-card-body">
+            <form action="#">
+                <!--Email input-->
+                <div class="field  email">
+                    <div class="input-area ">
+                        <input
+                            type="text"
+                            name=""
+                            id=""
+                            class=""
+                            placeholder="example@email.com">
+                     
+                        <i class="error-icon fas fa-exclamation-circle error-warn"></i>
+                    </div>
+                    <div class="input-error-txt error-warn">Email can't be blank</div>
+                </div>
+                <div class="field  submit">
+                    <!--Submit form-->
+                    <button class="btn btn-primary bg-p-blue btn-lg mt30" onsubmit>RESET</button>
+                </div>
+            </form>
+        </div>
+        <!--Card footer-->
+        <div class="center-card-footer">
+            <p class="center-card-text">Already have an account? <a href="#">Login here</a></p>
+        </div>
+    </div>
+    <script src="./assets/js/validate.js"></script>
+</body>
+</html>
